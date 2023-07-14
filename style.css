@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(41, 39, 39);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    width: 500px;
+    height:500px;
+    background-color: pink;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: inset -5px -45px 4px rgba(0, 0, 0, 0.208);
+}
+
+.eyes-container , .nose-container{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top:140px;
+left:50%;
+transform: translateX(-50%);
+gap:20px;
+}
+
+.eye{
+    width:100px;
+    height:100px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    border:10px solid black;
+}
+
+.eye-iris{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+}
+
+.eye:nth-child(1) > .eye-iris{
+   bottom:20px;
+   right:10px;
+}
+.eye:nth-child(2)>.eye-iris{
+    bottom:20px;
+    left:10px;
+}
+
+.nose-container{
+    background-color: salmon;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    top:260px;
+    border:10px solid black;
+}
+
+.hole{
+    width:40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
